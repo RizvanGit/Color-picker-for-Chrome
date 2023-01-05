@@ -13,7 +13,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
 }
 
 .popup {
@@ -59,7 +58,9 @@ body {
 .colors-picked {
   margin: 5px 10px;
 }
-
+.colors-picked.hide {
+  display: none;
+}
 .colors-picked header {
   justify-content: space-between;
 }
@@ -95,7 +96,6 @@ body {
   width: 22px;
   margin-right: 5px;
   border-radius: 4px;
-  background-color: #7890ee;
 }
 .colors-list .color .value {
   font-size: .95rem;
