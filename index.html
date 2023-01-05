@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
   <title>Color picker</title>
 </head>
 <body>
@@ -12,19 +13,13 @@
     <div class="picker">
       <button data-color-picker class="pick-button">Pick color</button>
     </div>
-    <div data-colors-picked class="colors-picked">
+    <div data-colors-picked class="colors-picked hide">
       <header>
-        <p class="title">Picked colors</p>
+        <p class="title">Picked colors:</p>
         <span data-clear-all class="clear-all">Clear all</span>
       </header>
-      <ul data-colors-list class="colors-all">
-        <li class="color">
-          <span class="rect"></span>
-          <span class="value">#ffffff</span>
-        </li>
-      </ul>
+      <ul data-colors-list class="colors-list"></ul>
     </div>
   </div>
-  <script src="main.js"></script>
 </body>
 </html>
